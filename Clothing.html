@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing</title>
+
+
+<!-- CSS -->
+<link rel="stylesheet" href="productStyle.css">
+
+</head>
+<body>
+
+    <header>
+<div class="nav-top">
+
+    <a href="#">Womenswear</a>
+    <a href="#">Menswear</a>
+    <a href="#">Kidswear</a>
+
+</div>
+
+<div class="logo"> FARFETCH </div>
+<div class="nav-main">
+    <a href="#" class="sale-tag"> sale </a>
+
+    <a href="#"> New in </a>
+    <a href="#"> Brands </a>
+    <a href="#"> Clothing </a>
+    <a href="#"> Shoes </a>
+    <a href="#"> Accessories </a>
+    <a href="#"> Watches </a>
+    <a href="#"> HomeWare </a>
+
+</div>
+    </header>
+
+    <div class="products-container">
+
+<!-- card 1 -->
+    <div class="product-card">
+    <div class="product-image">
+        <img src="Product-Images/kick.webp" alt="Trainer">
+    </div>
+    <div class="product-info">
+        <div class="brand">Fendi </div>
+        <div class="product-name">Trainer</div>
+        
+        <div class="prices">
+           <span class="current-price" >$414</span>
+           <span class="original-price" >$600</span>
+           <span class="discount-price" >$26%</span>
+        </div>
+        <button class="buy-now-btn" data-product="Trainer"  data-price="414" data-image="Product-Images/kick.webp">Buy Now</button>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+
+<!-- card 2 -->
+
+       <div class="product-card">
+        <div class="product-image">
+    
+            <img src="Product-Images/watches.webp" alt="Trainer">
+    
+        </div>
+    
+        <div class="product-info">
+            <div class="brand">Gucci </div>
+            <div class="product-name">Watches</div>
+            
+            <div class="prices">
+               <span class="current-price" >$1114</span>
+               <span class="original-price" >$2000</span>
+               <span class="discount-price" >$35%</span>
+    
+            </div>
+<button class="buy-now-btn" data-product="Watches"  data-price="1114" data-image="Product-Images/watches.webp">Buy Now</button>
+            </div>
+           </div>
+
+
+
+
+<!-- card 3 -->
+
+           <div class="product-card">
+            <div class="product-image">
+        
+                <img src="Product-Images/hoddie.webp" alt="Trainer">
+        
+            </div>
+        
+            <div class="product-info">
+                <div class="brand">Nike </div>
+                <div class="product-name">Hoddie </div>
+                
+                <div class="prices">
+                   <span class="current-price" >$114</span>
+                   <span class="original-price" >$200</span>
+                   <span class="discount-price" >$36%</span>
+        
+                </div>
+                <button class="buy-now-btn" data-product="Hoddie"  data-price="114" data-image="Product-Images/hoddie.webp">Buy Now</button>
+                </div>
+               </div>
+
+
+
+<!-- card 4 -->
+
+               <div class="product-card">
+                <div class="product-image">
+            
+                    <img src="Product-Images/yeezy.webp" alt="Trainer">
+            
+                </div>
+            
+                <div class="product-info">
+                    <div class="brand">Adidas </div>
+                    <div class="product-name">yeezy </div>
+                    
+                    <div class="prices">
+                       <span class="current-price" >$100</span>
+                       <span class="original-price" >$500</span>
+                       <span class="discount-price" >$16%</span>
+            
+                    </div>
+                    <button  class="buy-now-btn" data-product="yeezy "  data-price="100" data-image="Product-Images/yeezy.webp">Buy Now</button>
+                    </div>
+                   </div>
+              
+                  </div>
+
+
+
+          <div id="purchaseForm" class="purchase-form">     
+            <h2>Complete your Purchase</h2>
+            <div class="product-sumary">
+        <img id="selectedProductImage" src="" alt="selected product" >
+        
+        <div>
+            <h3 id="selectedProductName"></h3>
+            <p id="selectedProductPrice"></p>
+        </div>
+
+         </div>
+
+         <form id="checkoutForm">
+
+            <div class="form-group">
+                <label for="name">full name </label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+
+             <div class="form-group">
+                <label for="email">Email Address </label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+               <div class="form-group">
+                <label for="address">Shipping Address </label>
+                <input type="address" id="address" name="address" required>
+            </div>
+
+             <div class="form-group">
+                <label for="phone">Phone Number </label>
+                <input type="phone" id="phone" name="phone" required>
+            </div>
+
+              <button type="submit" class="submit-btn">Send Order via Email</button>
+            </form>
+
+            <div class="email-instructions">
+                <h3>How it Works</h3>
+                <p>When you click "send Order vai email",
+                    your default email client will open
+                    with a pre-filled email containing your order
+                    details. Simply review the information and click
+                     send to place your order.
+                </p>
+            </div>
+         </div>
+
+            <div id="thankYou" class="thank-you">
+            <i class="fas fa-check-circle"></i>
+            <h2>Thank You For Your Purchase</h2>
+             
+            <p>Your order email has been prepared.
+             please check your email client
+             and click send to complete your order.
+            </p>
+            <p>We'll process your order once we receive your email.</p>
+
+          </div>
+       
+         
+          
+    <footer>
+  <p>&copy; 2024 Digital Marketing  Pro. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
