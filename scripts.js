@@ -59,16 +59,17 @@ document.getElementById("mc_embed_shell").addEventListener("click",function(e){
 
 // on page load, check past choice
 
-window.onload = function () {
+// window.onload = function () {
   
-  if(localStorage.getItem("cookiesAccepted")==="true"){
-    loadAnalytics(); 
-    document.getElementById("cookie-banner").style.display="none";
+//   if(localStorage.getItem("cookiesAccepted")==="true"){
+//     loadAnalytics(); 
+//     document.getElementById("cookie-banner").style.display="none";
       
-  }else if (localStorage.getItem("cookiesAccepted")==="false"){
-    document.getElementById("cookie-banner").style.display="none";
-  }
-}
+//   }else if (localStorage.getItem("cookiesAccepted")==="false"){
+//     document.getElementById("cookie-banner").style.display="none";
+//   }
+// }
+
 
 
 
