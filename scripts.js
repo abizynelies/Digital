@@ -42,33 +42,34 @@ document.getElementById("mc_embed_shell").addEventListener("click",function(e){
 // =======================> Cookies <=============================
 
 
-// function acceptCookies() {
-//   document.getElementById("cookie-banner").style.display ="none";
-//   localStorage.setItem("cookiesAccepted", "true")
-//   loadAnalytics(); // GA4
+function acceptCookies() {
+  document.getElementById("cookie-banner").style.display ="none";
+  localStorage.setItem("cookiesAccepted", "true")
+  loadAnalytics(); // GA4
   
-// }
+}
 
 
-// function declineCookies() {
-//   document.getElementById("cookie-banner").style.display ="none";
-//   localStorage.setItem("cookiesAccepted", "false")
-  // loadAnalytics(); // GA4
+function declineCookies() {
+  document.getElementById("cookie-banner").style.display ="none";
+  localStorage.setItem("cookiesAccepted", "false")
+  loadAnalytics(); // GA4
   
-// }
+}
 
-// on page load, check past choice
+on page load, check past choice
 
-// window.onload = function () {
+window.onload = function () {
   
-//   if(localStorage.getItem("cookiesAccepted")==="true"){
-//     loadAnalytics(); 
-//     document.getElementById("cookie-banner").style.display="none";
+  if(localStorage.getItem("cookiesAccepted")==="true"){
+    loadAnalytics(); 
+    document.getElementById("cookie-banner").style.display="none";
       
-//   }else if (localStorage.getItem("cookiesAccepted")==="false"){
-//     document.getElementById("cookie-banner").style.display="none";
-//   }
-// }
+  }else if (localStorage.getItem("cookiesAccepted")==="false"){
+    document.getElementById("cookie-banner").style.display="none";
+  }
+}
+
 
 
 
