@@ -55,7 +55,7 @@ document.getElementById("mc_embed_shell").addEventListener("click",function(e){
 //   localStorage.setItem("cookiesAccepted", "false")
   // loadAnalytics(); // GA4
   
-}
+// }
 
 // on page load, check past choice
 
@@ -69,6 +69,7 @@ window.onload = function () {
     document.getElementById("cookie-banner").style.display="none";
   }
 }
+
 
 
 
