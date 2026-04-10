@@ -42,20 +42,32 @@ document.getElementById("mc_embed_shell").addEventListener("click",function(e){
 // =======================> Cookies <=============================
 
 
-function acceptCookies() {
-  document.getElementById("cookie-banner").style.display ="none";
-  localStorage.setItem("cookiesAccepted", "true")
-  loadAnalytics(); // GA4
-  
+const banner = document.getElementById("cookie-banner");
+const acceptBtn = document.getElementById("accept-btn");
+const declineBtn = document.getElementById("decline-btn");
+
+// Check if user already made a choice
+const consent = localStorage.getItem("cookieConsent");
+
+if (consent === "accepted") {
+  banner.style.display = "none";
+  loadAnalytics(); // Load analytics only if accepted
+} else if (consent === "declined") {
+  banner.style.display = "none";
 }
 
+// Accept cookies
+acceptBtn.addEventListener("click", () => {
+  localStorage.setItem("cookieConsent", "accepted");
+  banner.style.display = "none";
+  loadAnalytics(); // IMPORTANT
+});
 
-function declineCookies() {
-  document.getElementById("cookie-banner").style.display ="none";
-  localStorage.setItem("cookiesAccepted", "false")
-  // loadAnalytics(); // GA4
-  
-}
+// Decline cookies
+declineBtn.addEventListener("click", () => {
+  localStorage.setItem("cookieConsent", "declined");
+  banner.style.display = "none";
+});
 
 // on page load, check past choice
 
@@ -69,3 +81,5 @@ window.onload = function () {
     document.getElementById("cookie-banner").style.display="none";
   }
 }
+
+
