@@ -1005,10 +1005,18 @@ with our comprehensive SEO and PPc courses" >
 </div>
 
 
-<div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; right: 0; background: #222; color: #fff; padding: 15px; text-align: center; font-family: sans-serif; z-index:9999;">
-<p>We use cookies to improve your browsing experience.By clicking "Accept", you agree to our use of cookies.</p>
-<button onclick="acceptCookies()" style="margin-left:10px; padding:5px 10px; background:#4CAF50; color:white; border:none; cursor:pointer;">Accept</button>
-<button onclick="declineCookies()" style="margin-left:10px; padding:5px 10px; background:#f44336; color:white; border:none; cursor:pointer;">Decline</button>
+<div id="cookie-banner" class="cookie-banner">
+  <div class="cookie-content">
+    <p>
+      🍪 We use cookies to improve your experience and analyze traffic. 
+      You can accept or manage your preferences.
+    </p>
+
+    <div class="cookie-buttons">
+      <button id="accept-btn" class="btn-accept">Accept All</button>
+      <button id="decline-btn" class="btn-decline">Decline</button>
+    </div>
+  </div>
 </div>
 
 <script src="scripts.js"></script>
